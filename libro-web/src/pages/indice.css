@@ -1,0 +1,33 @@
+.indice-container {
+ 
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.indice-titulo {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0;
+  color: #B91C1C;
+
+}
+
+.lista-autores {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+@media (max-width: 768px) {
+  .indice-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .indice-titulo {
+    margin-top: 4rem;
+     font-size: 2.5em;
+     color: #B91C1C;
+  }
+
+  
+}

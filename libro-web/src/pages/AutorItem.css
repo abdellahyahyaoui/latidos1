@@ -1,0 +1,51 @@
+.autor-item {
+  position: relative;
+  margin: 1rem 0;
+  font-size: clamp(1.2rem, 2.5vw, 1.2rem); /* ✅ Responsive font size */
+  cursor: pointer;
+  width: fit-content;
+  transition: color 0.2s ease;
+  font-weight: bold;
+}
+
+.autor-item:hover .nombre-autor {
+  color: #51d472;
+}
+
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 120%;
+  top: 0;
+  background: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 0.8rem;
+  width: 250px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s;
+  z-index: 100;
+}
+
+.autor-item:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ✅ Media Query para el tooltip en pantallas pequeñas */
+@media (max-width: 768px) {
+  .tooltip {
+    left: 160%; /* Centra el tooltip horizontalmente */
+    top: -220%; /* Lo coloca debajo del nombre del autor */
+    transform: translateX(-50%); /* Ajusta para centrar */
+    width: 80vw; /* Ancho relativo al viewport */
+    max-width: 250px; /* Máximo ancho */
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .autor-item {
+    font-size: clamp(1.5rem, 2.5vw, 1.2rem);
+    line-height: 1.6;
+  }
+}

@@ -1,0 +1,134 @@
+.autor-indice-container {
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.autor-indice-main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.autor-indice-titulo {
+  font-size: clamp(2.5rem, 7vw, 3.5rem);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  color: #B91C1C;
+}
+
+.autor-indice-columns {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las columnas se envuelvan en pantallas pequeñas */
+  gap: 2rem;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.autor-indice-left-column,
+.autor-indice-right-column {
+  flex: 1;
+  min-width: 280px; /* Ancho mínimo para evitar que se aplasten */
+  padding: 1rem;
+  border: 1px solid #eee; /* Borde sutil para visualización */
+  border-radius: 8px;
+
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.autor-indice-right-column{
+   display: flex;
+   flex-direction: column;
+  flex: 1.5;
+  min-width: 280px;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+   /* Opcional: centra la imagen */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.image{
+  background-image: url("../assets/abdellah1.jpg");
+  background-size: cover; /* Opcional: ajusta al contenedor */
+  background-position: center;
+}
+
+
+.autor-indice-subtitulo {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  color: #15803D;
+}
+
+.autor-indice-parts-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.autor-indice-part-item {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+  color: #000;
+  transition: color 0.2s ease;
+}
+
+.autor-indice-part-item:hover {
+  color: #51d472; /* Color verde al pasar el ratón */
+}
+
+.autor-indice-image {
+  max-width: 20%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  
+}
+
+.autor-indice-description {
+  font-size: clamp(0.9rem, 2.2vw, 1.1rem);
+  line-height: 1.6;
+  text-align: justify;
+  color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .autor-indice-columns {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .autor-indice-left-column,
+  .autor-indice-right-column {
+    min-width: unset;
+    width: 100%;
+    margin-left: -12px;
+  }
+  .autor-indice-main-content {
+    padding: 1rem;
+  }
+}
+@media (max-width: 480px){
+  .autor-indice-description, .autor-indice-part-item {
+  font-size: 1.5rem; /* Nuevo tamaño de fuente para todos los párrafos */
+  line-height: 1.6; /* Asegurar buena legibilidad */
+  margin-bottom: 1rem; /* Ajustar margen inferior si es necesario */
+} 
+.autor-indice-subtitulo{
+   font-size: clamp(1.9rem, 4vw, 2rem);
+ 
+}
+}

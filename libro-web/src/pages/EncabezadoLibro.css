@@ -1,0 +1,22 @@
+.encabezado-libro {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Cormorant Garamond", serif;
+  margin-left: 0;
+}
+
+.encabezado-libro h1 {
+  font-size: clamp(1.25rem, 2.5vw, 1.2rem); /* ✅ Responsive font size */
+  margin: 0;
+}
+
+.rojo {
+  color: #e05a5a;
+}
+.negro {
+  color: #000;
+}
+.verde {
+  color: #51d472;
+}

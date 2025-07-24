@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Gloock&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Waterfall&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Waterfall&display=swap');
+
+/* ✅ Base font-size para responsividad */
+html {
+  font-size: 16px; /* Base para rem */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.container {
+  text-align: center;
+  /* padding: 3rem 1rem; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  justify-content: space-between;
+}
+
+.titulo {
+  font-size: clamp(2.5rem, 8vw, 4rem); /* ✅ Responsive font size */
+  margin: 2rem 0 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  
+}
+
+.rojo {
+  color: #DC2626;
+}
+
+.negro {
+  color: #1F2937;
+}
+
+.verde {
+  color: #16A34A;
+}
+
+.corazon {
+  width: clamp(80px, 15vw, 120px); /* ✅ Responsive width */
+  margin: 1rem auto;
+  display: block;
+  animation: latido 1.5s infinite;
+}
+
+.corazon-mini {
+  width: clamp(30px, 8vw, 50px); /* ✅ Responsive width */
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.autor {
+  font-size: clamp(2rem, 3vw, 1.2rem); /* ✅ Responsive font size */
+  margin: 2rem 0 1rem;
+}
+
+.nombre {
+  font-family: "Waterfall", cursive;
+  font-size: clamp(1.2rem, 4vw, 1.5rem); /* ✅ Responsive font size */
+}
+
+.navegacion-relato {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  flex-shrink: 0;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.boton-siguiente:hover {
+ 
+ transform:  scale(1.2)}
+.boton-anterior,
+.boton-siguiente {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.5rem;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem); /* ✅ Responsive font size */
+  font-weight: bold;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.boton-siguiente .texto-sig {
+  color: #B91C1C;
+}
+
+.boton-anterior .texto-ant {
+  color: #15803D; /* Verde */
+}
+.boton-siguiente .texto-sig:hover {
+ 
+ color: #15803D;
+}
+.boton-anterior .texto-ant:hover{
+  
+  color:#B91C1C;
+}
+
+
+.triangulo {
+  font-size: clamp(1.2rem, 3.5vw, 1.5rem); /* ✅ Responsive font size */
+}
+
+.triangulo.rojo {
+  color: #DC2626;
+}
+
+.triangulo.verde {
+  color: #16A34A;
+}
+
+.texto-ant,
+.texto-sig {
+  white-space: nowrap;
+}
+
+@keyframes latido {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+}
+
+/* ✅ Media Queries para ajustes finos en pantallas pequeñas */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px; /* Reduce la base para pantallas más pequeñas */
+  }
+
+  .container,
+  .preambulo-container,
+  .relato-container,
+  .autor-perfil-container {
+    padding: 1.5rem 1rem; /* Reduce el padding general */
+  }
+
+  .navegacion-relato {
+    margin-top: 1.5rem; /* Reduce el margen superior */
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px; /* Más reducción para móviles muy pequeños */
+  }
+
+  
+  .preambulo-container,
+  .relato-container,
+  .autor-perfil-container {
+    padding: 1rem 0.8rem; /* Padding mínimo */
+  }
+  .boton-anterior,
+.boton-siguiente,.triangulo,.autor {
+  font-size: 1.9rem;
+}
+.container{
+  width: 100vw;
+  position: sticky;
+  height: 100vh;
+}
+.titulo{
+  font-size: 2.3rem;
+}
+p {
+  font-size: 1.2rem; /* Nuevo tamaño de fuente para todos los párrafos */
+  line-height: 1.6; /* Asegurar buena legibilidad */
+  margin-bottom: 1rem; /* Ajustar margen inferior si es necesario */
+}
+li {
+  font-size: 1.3rem; /* Nuevo tamaño de fuente para todos los párrafos */
+  line-height: 1.6; /* Asegurar buena legibilidad */
+  margin-bottom: 1rem; /* Ajustar margen inferior si es necesario */
+}
+}
