@@ -3,7 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Waterfall&display=swap");
 
 @import url('https://fonts.googleapis.com/css2?family=Waterfall&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poiret+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /* ✅ Base font-size para responsividad */
 html {
   font-size: 16px; /* Base para rem */
@@ -27,11 +28,11 @@ body {
 }
 
 .titulo {
-  font-size: clamp(2.5rem, 8vw, 4rem); /* ✅ Responsive font size */
+  font-size: clamp(2.5rem, 8vw, 2rem); /* ✅ Responsive font size */
   margin: 2rem 0 1rem;
   letter-spacing: 0.1rem;
   font-weight: 500;
-  
+   font-family: "Cinzel", serif;
 }
 
 .rojo {
@@ -63,6 +64,7 @@ body {
 .autor {
   font-size: clamp(2rem, 3vw, 1.2rem); /* ✅ Responsive font size */
   margin: 2rem 0 1rem;
+  
 }
 
 .nombre {
@@ -79,7 +81,7 @@ body {
   padding: 0 1rem;
   box-sizing: border-box;
 }
-.boton-siguiente:hover {
+.boton-siguiente,.boton-anterior:hover {
  
  transform:  scale(1.2)}
 .boton-anterior,
@@ -90,7 +92,7 @@ body {
   gap: 0.5rem;
   font-size: clamp(0.9rem, 2.5vw, 1.1rem); /* ✅ Responsive font size */
   font-weight: bold;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cinzel", serif;
 }
 
 .boton-siguiente .texto-sig {
@@ -111,7 +113,7 @@ body {
 
 
 .triangulo {
-  font-size: clamp(1.2rem, 3.5vw, 1.5rem); /* ✅ Responsive font size */
+  font-size: clamp(1.2rem, 3.5vw, 2rem); /* ✅ Responsive font size */
 }
 
 .triangulo.rojo {
@@ -154,7 +156,7 @@ body {
   }
 
   .navegacion-relato {
-    margin-top: 1.5rem; /* Reduce el margen superior */
+    margin-top: 3rem; /* Reduce el margen superior */
   }
 }
 
@@ -179,7 +181,7 @@ body {
   height: 100vh;
 }
 .titulo{
-  font-size: 2.3rem;
+  font-size: 2.1rem;
 }
 p {
   font-size: 1.2rem; /* Nuevo tamaño de fuente para todos los párrafos */

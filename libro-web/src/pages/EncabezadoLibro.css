@@ -2,13 +2,15 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cinzel", serif;
   margin-left: 0;
+  font-weight: 300;
 }
 
 .encabezado-libro h1 {
   font-size: clamp(1.25rem, 2.5vw, 1.2rem); /* ✅ Responsive font size */
   margin: 0;
+  font-weight: 600;
 }
 
 .rojo {

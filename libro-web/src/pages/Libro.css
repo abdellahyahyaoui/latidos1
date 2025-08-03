@@ -2,11 +2,9 @@
   position: fixed;
   inset: 0;
   z-index: 0;
-  
-  overflow: hidden; /* Asegura que no haya scroll en el contenedor principal */
+  overflow: hidden;
 }
 
-/* Estilos para el HTMLFlipBook en escritorio */
 .libro-pantalla-completa {
   width: 100vw !important;
   height: 100vh !important;
@@ -17,60 +15,54 @@
 
 .pagina-libro {
   width: 100%;
-  height: 100%; /* Por defecto, 100% de la altura del flipbook */
+  height: 100%;
   background-color: white;
-  padding: 2rem; /* ✅ Usar rem para padding */
+  padding: 2rem;
   box-sizing: border-box;
   font-family: "Cormorant Garamond", serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow-y: hidden; /* Por defecto, no scroll en escritorio */
+  overflow-y: hidden;
 }
 
-/* Media Query para móviles y tablets (ej. hasta 768px de ancho) */
-@media (max-width: 768px) {
+/* ✅ CAMBIAR: Media Query para móviles y tablets hasta 1024px */
+@media (max-width: 1024px) {
   .libro-pantalla-completa {
-    /* En móvil, el flipbook puede tener una altura más flexible */
-    height: auto !important; /* Permitir que la altura se ajuste al contenido */
-    min-height: 100vh; /* Asegurar que ocupe al menos la altura de la ventana */
-    position: relative; /* Cambiar a relative para que el scroll funcione en el body si es necesario */
+    height: auto !important;
+    min-height: 100vh;
+    position: relative;
   }
 
   .pagina-libro {
-    padding: 1.5rem 1rem; /* Reduce el padding en pantallas pequeñas */
-    height: auto; /* Permitir que la altura de la página se ajuste al contenido */
-    min-height: calc(100vh - 3rem); /* Asegurar que la página ocupe al menos la altura visible, ajustando por padding */
-    overflow-y: auto; /* Permitir scroll vertical en móvil */
-    -webkit-overflow-scrolling: touch; /* Mejorar el scroll en iOS */
+    padding: 1.5rem 1rem;
+    height: auto;
+    min-height: calc(100vh - 3rem);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
 @media (max-width: 480px) {
   .pagina-libro {
-    padding: 1rem 0.8rem; /* Más reducción para móviles muy pequeños */
-    min-height: calc(100vh - 2rem); /* Ajustar min-height por padding */
+    padding: 1rem 0.8rem;
+    min-height: calc(100vh - 2rem);
+    overflow-y: visible;
   }
-}
 
-/* Asegurarse de que el contenido dentro de las páginas no se desborde */
-.pagina-libro > * {
-  max-width: 100%; /* Evita que los elementos hijos se desborden */
-  box-sizing: border-box;
-
-}
-
-@media (max-width: 480px) {
-  .pagina-libro {
-    padding: 1rem 0.8rem; /* Más reducción para móviles muy pequeños */
-    overflow-y: visible; 
-  }
   .pagina-libro > * {
-  max-width: 100%; /* Evita que los elementos hijos se desborden */
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contenedor-libro {
+    overflow: scroll;
+  }
+}
+
+.pagina-libro > * {
+  max-width: 100%;
   box-sizing: border-box;
-  /* width: 100vw; */
-}
-.contenedor-libro{
-  overflow: scroll;
-}
+  /* overflow-x: clip; */
+  display: contents;
 }

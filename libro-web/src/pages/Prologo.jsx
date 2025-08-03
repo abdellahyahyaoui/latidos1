@@ -57,6 +57,7 @@ export default function Prologo({
   const textoHTML = parrafo
     .replace(/(Palestina)/gi, '<span class="resaltar-palestina">$1</span>')
     .replace(/(latido[s]?)/gi, '<span class="resaltar-latido">$1</span>')
+.replace(/—\s*Abdellah\s*Yahyaoui\s*Azuz\s*—/g, (match) => `<span class="cita-autor">${match}</span>`)
 
   return <span dangerouslySetInnerHTML={{ __html: textoHTML }} />
 }

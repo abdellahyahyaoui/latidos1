@@ -10,7 +10,10 @@ import AutorIndice from "../components/AutorIndice"
 import { splitPrologoIntoPages, splitRelatoWithPartsIntoPages } from "./utils/splitContentIntoPages"
 import "./Libro.css"
 import autoresData from "../data/autores.json"
+import cartasEsperanzaData from "../data/cartas-esperanza.json"
+import poesiaData from "../data/poesia.json"
 import { prologoContent } from "./utils/prologo"
+import ContactModal from "../components/ContactModal" // ✅ Reintroducido
 
 const Pagina = React.forwardRef(({ children }, ref) => (
   <div className="pagina-libro" ref={ref}>
@@ -25,18 +28,17 @@ export default function Libro() {
     height: typeof window !== "undefined" ? window.innerHeight : 800,
   })
   const [isMobile, setIsMobile] = useState(false)
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false) // ✅ Reintroducido el estado del modal
 
-  const autores = autoresData
+  const autores = useMemo(() => [...autoresData, ...cartasEsperanzaData, ...poesiaData], [])
 
-  // Mover la paginación a useMemo para evitar recálculos excesivos
   const paginatedPrologo = useMemo(() => {
     return splitPrologoIntoPages(prologoContent, 12)
   }, [])
 
   const paginatedAutores = useMemo(() => {
     return autores.map((autor) => {
-      // Usar la función que maneja múltiples parts
-      const paginatedContent = splitRelatoWithPartsIntoPages(autor.parts, 9)
+      const paginatedContent = splitRelatoWithPartsIntoPages(autor.parts || [], 12, 10)
       return {
         ...autor,
         paginatedContent: paginatedContent,
@@ -48,40 +50,31 @@ export default function Libro() {
     const map = []
     let currentPageIndex = 0
 
-    // Mapas para navegación
-    const authorIndexPageStarts = {} // { autorId: globalPageIndex }
-    const authorStoryPageStarts = {} // { autorId: globalPageIndex de la primera página del relato }
-    const autorPartGlobalPageStarts = {} // { autorId: { "Titulo de la Parte": globalPageIndex } }
+    const authorIndexPageStarts = {}
+    const authorStoryPageStarts = {}
+    const autorPartGlobalPageStarts = {}
 
-    // 0: Portada
     map.push({ type: "portada" })
     currentPageIndex++
 
-    // 1-N: Páginas del prólogo
     paginatedPrologo.forEach((pageContent, pageIndex) => {
       map.push({ type: "prologo", pageIndex: pageIndex })
       currentPageIndex++
     })
 
-    // Índice principal
     const mainIndexPage = currentPageIndex
     map.push({ type: "indice" })
     currentPageIndex++
 
-    // Páginas de índice de autor y páginas de relato
     paginatedAutores.forEach((autor) => {
-      // Página de índice del autor
       authorIndexPageStarts[autor.id] = currentPageIndex
       map.push({ type: "autorIndice", autorId: autor.id })
       currentPageIndex++
 
-      // Inicializar el mapa de partes para este autor
       autorPartGlobalPageStarts[autor.id] = {}
 
-      // Páginas del relato del autor
-      authorStoryPageStarts[autor.id] = currentPageIndex // Guarda el inicio del relato completo del autor
+      authorStoryPageStarts[autor.id] = currentPageIndex
       autor.paginatedContent.forEach((pageData, pageIndexInAutor) => {
-        // Si es la primera página de una nueva sección (part), guarda su índice global
         if (pageData.isFirstPageOfSection && pageData.sectionTitle) {
           autorPartGlobalPageStarts[autor.id][pageData.sectionTitle] = currentPageIndex
         }
@@ -89,7 +82,7 @@ export default function Libro() {
         map.push({
           type: "relato",
           autorId: autor.id,
-          pageIndex: pageIndexInAutor, // Índice dentro del paginatedContent del autor
+          pageIndex: pageIndexInAutor,
           sectionTitle: pageData.sectionTitle,
           isFirstPageOfSection: pageData.isFirstPageOfSection,
         })
@@ -140,6 +133,14 @@ export default function Libro() {
     flip.turnToPage(pageIndex)
   }
 
+  // ✅ Funciones para abrir y cerrar el modal
+  const openContactModal = () => {
+    setIsContactModalOpen(true)
+  }
+  const closeContactModal = () => {
+    setIsContactModalOpen(false)
+  }
+
   return (
     <div className="contenedor-libro">
       <HTMLFlipBook
@@ -162,7 +163,11 @@ export default function Libro() {
           if (pageInfo.type === "portada") {
             return (
               <Pagina key={index}>
-                <Portada avanzarPagina={avanzarPagina} onGoToHome={volverAlInicio} />
+                <Portada
+                  avanzarPagina={avanzarPagina}
+                  onGoToHome={volverAlInicio}
+                  openContactModal={openContactModal} 
+                />
               </Pagina>
             )
           } else if (pageInfo.type === "prologo") {
@@ -198,25 +203,30 @@ export default function Libro() {
                   autor={autor}
                   irAPagina={irAPagina}
                   onGoToHome={volverAlInicio}
-                  // Pasar el mapa de inicio de páginas de las partes de este autor
                   autorPartGlobalPageStarts={pageMapData.autorPartGlobalPageStarts}
                 />
               </Pagina>
             )
           } else if (pageInfo.type === "relato") {
             const autor = paginatedAutores.find((a) => a.id === pageInfo.autorId)
-            const pageData = autor.paginatedContent[pageInfo.pageIndex]
+            const pageData = autor?.paginatedContent?.[pageInfo.pageIndex]
+
+            if (!autor || !pageData) {
+              console.error("Error: Autor o datos de página no encontrados para relato", pageInfo)
+              return null
+            }
+
             const authorIndexPage = pageMapData.authorIndexPageStarts[autor.id]
 
             return (
               <Pagina key={index}>
                 <Relato
                   autor={autor.nombre}
-                  titulo={autor.titulo} // Título general del autor
+                  titulo={autor.titulo}
                   contenido={pageData.content}
-                  sectionTitle={pageData.sectionTitle} // Título de la sección actual
-                  isFirstPageOfSection={pageData.isFirstPageOfSection} // Si es la primera página de la sección
-                  esPrimeraPagina={pageInfo.pageIndex === 0} // Si es la primera página del relato completo del autor
+                  sectionTitle={pageData.sectionTitle}
+                  isFirstPageOfSection={pageData.isFirstPageOfSection}
+                  esPrimeraPagina={pageInfo.pageIndex === 0}
                   avanzarPagina={avanzarPagina}
                   retrocederPagina={retrocederConAnimacion}
                   onGoToHome={volverAlInicio}
@@ -229,6 +239,8 @@ export default function Libro() {
           return null
         })}
       </HTMLFlipBook>
+      {isContactModalOpen && <ContactModal onClose={closeContactModal} />}{" "}
+      {/* ✅ Renderiza el modal condicionalmente */}
     </div>
   )
 }
