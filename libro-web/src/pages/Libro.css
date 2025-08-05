@@ -40,6 +40,7 @@
     min-height: calc(100vh - 3rem);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+     scrollbar-width: none;
   }
 }
 
@@ -57,6 +58,10 @@
 
   .contenedor-libro {
     overflow: scroll;
+    
+  }
+  .pagina-libro > *{
+    display: contents;
   }
 }
 
@@ -64,5 +69,5 @@
   max-width: 100%;
   box-sizing: border-box;
   /* overflow-x: clip; */
-  display: contents;
+  /* display: contents; */
 }

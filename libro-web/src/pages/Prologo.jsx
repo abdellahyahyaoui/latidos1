@@ -86,7 +86,7 @@ export default function Prologo({
 
       <div className="navegacion-relato">
         <div className="boton-anterior" onClick={handleRetroceder}>
-          <span className="triangulo verde">◀</span>
+          {/* <span className="triangulo verde">◀</span> */}
           <span className="texto-ant">Anterior</span>
         </div>
 
@@ -102,7 +102,7 @@ export default function Prologo({
 
         <div className="boton-siguiente" onClick={handleAvanzar}>
           <span className="texto-sig">Siguiente</span>
-          <span className="triangulo rojo">▶</span>
+          {/* <span className="triangulo rojo">▶</span> */}
         </div>
       </div>
     </div>

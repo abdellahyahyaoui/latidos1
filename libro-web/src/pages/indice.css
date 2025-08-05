@@ -72,14 +72,14 @@
 }
 
 .seccion-descripcion {
-  font-size: 1.3rem;
-  color: #666;
+  font-size: 2rem;
+  color: #264131;
   margin-bottom: 2rem;
-  line-height: 1.6;
+  line-height: 1;
   text-align: center;
   word-wrap: break-word;
   flex-shrink: 0;
-  font-family: "Cinzel", serif;
+  font-family: 'Ephesis';
   font-weight: 500;
 }
 
@@ -239,7 +239,7 @@
   }
 
   .seccion-descripcion {
-    font-size: 1.2rem;
+    font-size: 2.3rem;
     margin-bottom: 1.5rem;
   }
 

@@ -14,7 +14,7 @@
 }
 
 .modal-content {
-  background: rgba(255, 255, 255, 0.397);
+  background: rgb(255 255 255 / 92%);
   border-radius: 20px;
   padding: 2rem;
   width: 100%; /* Asegura que ocupe el ancho disponible */
@@ -22,7 +22,7 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   position: relative;
   animation: slideInFromTop 0.4s ease;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "cinzel", serif;
   text-align: center;
   border: 1px solid #15803d;
 }
@@ -46,7 +46,7 @@
 }
 
 .modal-close:hover {
-  color: #dc2626;
+  color: #aaa2a2;
   background: rgba(220, 38, 38, 0.1);
 }
 
@@ -56,11 +56,15 @@
 
 .modal-title {
   font-family: "Cinzel", serif;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   color: #15803d;
   margin: 0;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.1em;
+  padding: 0px 30px 0 0;
+}.modal-close{
+  background-color: #15803d47;
+  
 }
 
 .modal-links-wrapper {
@@ -113,6 +117,7 @@
   height: 60px; /* ✅ AJUSTADO: Tamaño más pequeño para SVGs */
   /* Eliminado position: absolute, top, left, transform aquí */
   padding: 5px;
+  background: #285aeb;
 }
 
 .social-icon-wrapper .icon-label {
@@ -256,6 +261,7 @@
   }
   .donate-button-modal .donate-icon {
     font-size: 1.1rem;
+    
   }
   .copyright-text {
     font-size: 0.7rem;
@@ -269,7 +275,8 @@
     max-width: 320px;
   }
   .modal-title {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    padding: 19px 59px 0 0;
   }
   .social-icons-grid {
     gap: 10px 8px;
@@ -285,15 +292,15 @@
     margin-bottom: 5px;
   }
   .social-icon-wrapper svg.icon-modal {
-    width: 35px; /* Aumentar de 16px a 20px */
-    height: 35px; /* Aumentar de 16px a 20px */
+    width: 55px; /* Aumentar de 16px a 20px */
+    height: 55px; /* Aumentar de 16px a 20px */
   }
   .social-icon-wrapper.tiktok .icon-modal svg {
     width: 20px; /* Aumentar de 16px a 20px */
     height: 20px; /* Aumentar de 16px a 20px */
   }
   .social-icon-wrapper .icon-label {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
   .donate-button-modal {
     padding: 8px 16px;

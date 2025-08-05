@@ -1,4 +1,6 @@
 export const prologoContent = [
+  "",
+  "",
   "Este no es un libro cualquiera.",
   "Es una obra colectiva. Viva.",
   "Un grito escrito por muchas manos, muchas conciencias, muchas almas que no han querido ser cómplices del silencio.",

@@ -10,13 +10,7 @@ export default function Portada({ avanzarPagina, onGoToHome, openContactModal })
       {/* ELIMINADO: SocialIconsHeader ya no va aquí */}
 
       <div
-        style={{
-          flexGrow: 1,
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
+        className="portada"
       >
         <TituloPrincipal />
         <img src={corazon || "/placeholder.svg"} alt="Corazón central" className="corazon" />
@@ -29,7 +23,7 @@ export default function Portada({ avanzarPagina, onGoToHome, openContactModal })
       <div className="navegacion-relato" style={{ justifyContent: "flex-end" }}>
         <div className="boton-siguiente" onClick={avanzarPagina}>
           <span className="texto-sig">Siguiente</span>
-          <span className="triangulo rojo">▶</span>
+          {/* <span className="triangulo rojo">▶</span> */}
         </div>
       </div>
     </div>

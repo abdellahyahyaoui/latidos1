@@ -1,5 +1,5 @@
 .relato-container {
-  font-family: "Cinzel", serif;
+  font-family:'Cormorant Garamond';
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -51,12 +51,12 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Bonheur Royale';
   margin-left: 0;
 }
 
 .relato-titulo {
-  font-family: "Cinzel", serif;
+  font-family: 'Bonheur Royale';
   font-size: clamp(2.5rem, 7vw, 1.5rem);
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -86,9 +86,11 @@
 
 .parrafo-relato {
   margin-bottom: 0.5rem;
-  text-indent: 1.5rem;
-  font-size: 1.1rem;
+  text-indent: 1rem;
+  font-size: 1.3rem;
   line-height: 1.4;
+  font-style: italic;
+  font-weight: 500;
 }
 
 /* Navegación */
@@ -138,8 +140,8 @@
 
 .texto-ant,
 .texto-sig {
-  font-size: larger;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 /* Ajustar el corazón */
@@ -430,7 +432,7 @@
 
   .texto-ant,
   .texto-sig {
-    font-size: 1.2rem;
+    font-size: 2.5rem;
   }
 
   .audio-container {
@@ -468,8 +470,8 @@
   }
 
   .relato-titulo {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 2.3rem;
+    margin-bottom: 3rem;
   }
 
   .navegacion-relato {

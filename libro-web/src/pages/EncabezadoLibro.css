@@ -4,13 +4,13 @@
   gap: 1rem;
   font-family: "Cinzel", serif;
   margin-left: 0;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .encabezado-libro h1 {
-  font-size: clamp(1.25rem, 2.5vw, 1.2rem); /* ✅ Responsive font size */
+  font-size: clamp(1.5rem, 2.5vw, 1.2rem); /* ✅ Responsive font size */
   margin: 0;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .rojo {

@@ -1,0 +1,66 @@
+.debug-panel {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 300px;
+  z-index: 1000;
+  font-family: monospace;
+  font-size: 12px;
+  max-height: 80vh;
+  overflow-y: auto;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(calc(100% - 40px)); /* Oculta la mayor parte del panel */
+}
+
+.debug-panel.open {
+  transform: translateX(0); /* Muestra el panel completo */
+}
+
+.debug-toggle-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: -100px; /* Posiciona el botón fuera del panel para que solo se vea la pestaña */
+  transform: rotate(-90deg) translateY(-100%);
+  transform-origin: top left;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.debug-content {
+  padding-top: 20px; /* Espacio para el botón rotado */
+}
+
+.debug-panel h3 {
+  margin-top: 0;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.debug-panel h4 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+
+.debug-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.debug-list li {
+  margin-bottom: 3px;
+  word-wrap: break-word;
+}

@@ -8,7 +8,7 @@
   padding: 12px 24px;
   border-radius: 25px;
   cursor: pointer;
-  font-family: "Cormorant Garamond", serif; /* ✅ Fuente consistente con el libro */
+  
   font-size: 16px;
   font-weight: 500;
   box-shadow: 0 4px 12px rgba(21, 128, 61, 0.3);
@@ -24,20 +24,23 @@
 }
 
 .contact-button-main {
-  display: block;
-  margin: 2rem auto 0; /* Centra horizontalmente y añade margen superior */
-  background: linear-gradient(135deg, #15803d, #22c55e);
-  color: white;
-  border: none;
-  padding: 12px 30px;
-  border-radius: 35px;
+   display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  border-radius: 9999px; /* Para un botón completamente redondeado (pill shape) */
+  font-size: 1rem; /* Tamaño de fuente más pequeño */
+  font-weight: 600;
+  padding: 0.75rem 1.5rem; /* Relleno más pequeño */
   cursor: pointer;
-  font-family: "cinzel", serif;
-  font-size: 23px;
-  font-weight: 500;
-  box-shadow: 1px 3px 10px #15803dd1;
-  transition: all 0.3s ease;
-  z-index: 1000;
+  border: none; /* Sin borde */
+  color: white;
+  background: linear-gradient(to right, #10b981, #059669); /* Gradiente verde */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase; /* Texto en mayúsculas como en la imagen */
+  letter-spacing: 0.05em; /* Espaciado entre letras */
+  font-family: "cinzel";
 }
 
 .contact-button-main:hover {

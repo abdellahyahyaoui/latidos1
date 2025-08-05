@@ -4,12 +4,24 @@
     "nombre": "Khaled Abu Huwaishel",
     "fragmento": "La lluvia golpeaba el tejado mientras escribía estas líneas. Cada gota era un recuerdo, cada palabra una promesa de resistencia...",
     "titulo": "Khaled Youssef",
-    "image": "",
+    "image": "/imagenes/Khaled_Abu_Huwaishel.jpg",
+   
     "description": "'Si nos quitan la pluma, la roca se habrá roto..' Khaled Youssef no es solo un nombre; es la voz de un padre, un hijo, un marido… pero, sobre todo, de un hombre que lucha por sobrevivir con dignidad. En este poderoso relato desde Gaza, nos muestra cómo el hambre no solo destruye cuerpos, sino también esperanzas. Un testimonio real que merece ser escuchado.",
+   "social": {
+      
+      "instagram": "https://www.instagram.com/khaled_1.y?igsh=Mzc5eGtvMmhtcTdk",
+      "telegram":"https://t.me/Journalist_Khaled_from_Gaza",
+  
+      "donation": "https://www.gofundme.com/f/urgentevacuation-from-gaza-for-huwaishil-family?lang=en_US&utm_campaign=fp_sharesheet&utm_medium=customer&utm_source=copy_link&fbclid=PAQ0xDSwL8zqdleHRuA2FlbQIxMAABpyTnOVffybv_7GtXVHSqU0Mnz7_OVRn8nlonc5fNT8ttikUZkBYyY1zWNCoJ_aem_g10kMcHRQjBdfKu_6eqlcA"
+    },
     "parts": [
-        {
+      
+  
+      {
   "title": "Papá, ¿hay comida en el cielo ?",
   "content": [
+    "",
+ 
     "En un rincón de una casa medio en ruinas, Adam, de siete años, estaba sentado,",
     "su cuerpo delgado envuelto en una manta rasgada.",
     "Miraba a su padre con hambre en los ojos: no solo del estómago, sino de esperanza… y de infancia.",
@@ -35,6 +47,8 @@
 {
   "title": "أبي، هل هناك طعام في السماء؟",
   "content": [
+    "",
+
     "في ركن من منزل شبه مهدّم، كان آدم، البالغ من العمر سبع سنوات، جالسًا،",
     "جسده النحيف ملفوفٌ في بطانية مهترئة.",
     "كان ينظر إلى والده بجوع في عينيه: ليس جوع المعدة فقط، بل جوع الأمل... والطفولة.",
@@ -60,6 +74,8 @@
 {
         "title": "¡Aquí Está Gaza!",
         "content": [
+          "",
+
           "Aquí está Gaza, donde no queda nada para comer ni beber.",
           "Aquí está Gaza, donde los mercados han empezado a cerrar uno a uno, no porque ya hayamos tenido",
           "suficiente, sino porque los estantes están vacíos, las tiendas agotadas, las carreteras bloqueadas y",
@@ -104,6 +120,8 @@
       {
         "title": "En el Camino de la Muerte",
         "content": [
+          "",
+
           "Mi intención esa mañana era una sola: alimentar a mis hijos.",
           "Salí de casa temprano, mientras el sol aún intentaba abrirse paso entre el denso humo que cubría el",
           "cielo. No era niebla... era ceniza, pólvora y los restos de sueños quemados.",
@@ -153,6 +171,8 @@
       {
      "title": "Si Fuera un Espíritu",
      "content": [
+      "",
+ 
     "Ojalá me hubiera convertido en un espíritu;",
     "para saber qué piensa Netanyahu;",
     "para entender qué planea contra Gaza.",
@@ -215,6 +235,8 @@
   {
   "title": "لو كنت روحًا",
   "content": [
+    "",
+ 
     "ليتني تحولت إلى روح؛",
     "لأعرف ماذا يفكر نتنياهو؛",
     "لأفهم ما يخطط له ضد غزة.",
@@ -279,6 +301,8 @@
 {
   "title": " Déjennos morir de hambre.",
   "content": [
+    "",
+  
     "En Gaza, la muerte ya no es una noticia sorprendente.",
     "Se ha convertido en una compañera cotidiana,",
     "que se cuela entre los escombros",
@@ -358,6 +382,8 @@
 {
   "title": " دعونا نموت من الجوع",
   "content": [
+    "",
+
     "في غزة، لم تعد الموت خبراً مفاجئاً.",
     "أصبح رفيقاً يومياً، يتسلل بين الركام، وفي عيون لم تنم منذ شهور.",
     
@@ -407,8 +433,10 @@
   ]
 },
 {
-  "title": "Querido hermano, con tu silencio nos mata",
+  "title": "Querido hermano, con tu silencio nos matan...",
   "content": [
+    "",
+
     "Soy de Gaza,",
     "de esta tierra que ha gemido bajo asedio durante años,",
     "de una ciudad bombardeada de día y hambrienta de noche,",
@@ -500,6 +528,8 @@
 {
   "title": "...أخي العزيز، بصمتك نقتل",
   "content": [
+    "",
+  
     "أنا من غزة،",
     "من هذه الأرض التي تأوهت تحت الحصار لسنوات،",
     "من مدينة تُقصف نهارًا وتجوع ليلًا،",
@@ -592,6 +622,8 @@
 { "title": "solo son Huérfanos..!",
   "content" :
   [
+    "",
+  
       "Ayuden a los huérfanos... No tienen nada en la vida más que sus lágrimas.",
       "En los fríos rincones de este mundo azotado por la guerra y la injusticia, viven niños que han perdido a sus padres.",
       "No saben dormir sin un abrazo, ni sonreír sin una voz tranquilizadora.",
@@ -623,6 +655,8 @@
     {
     "title":"!..فقط أيتام",
     "content": [
+      "",
+  
       "ساعدوا الأيتام... ليس لديهم في الحياة سوى دموعهم.",
       "في زوايا هذا العالم البارد الذي تعصف به الحرب والظلم، يعيش أطفال فقدوا آباءهم.",
       "لا يعرفون النوم بدون حضن، ولا الابتسامة بدون صوت يطمئنهم.",
@@ -651,8 +685,242 @@
       "ساعدهم... دعواتهم لا تُرفض.",
       "ساعدهم... يدك قد تكون سبب حياة جديدة تُكتب لهم."
     ]
-  }
+  },
+  {
+  "title": "“Ayuda Española : Una Vergüenza Cae sobre Gaza",
+  "content": [
+   
+    "",
+  
+    
+    "En tiempos de masacres,",
+    "cuando el pan vale más que la vida,",
+    "la 'ayuda' española cayó del cielo sobre Gaza...",
+    
+    "Pero no trajo vida.",
+    "Trajo podredumbre.",
+    "Trajo humillación.",
+    "Trajo el colapso de los valores.",
+    
+    "Sí: la ayuda española estaba caducada.",
+    "Podrida.",
+    "Podrida.",
+    
+    "¿Cómo puede un país que se llama civilizado,",
+    "enviar comida que no se le daría ni a los perros?",
+    
+    "¿Qué mente enferma cree",
+    "que los cuerpos de nuestros niños",
+    "pueden ser usados para experimentar con bacterias y toxinas?",
+    
+    "¿Pensaban que nuestra sangre valía menos",
+    "que su fecha de vencimiento?",
+    
+    "Esto no es un error.",
+    "Es un crimen moral.",
+    
+    "Esto no es ayuda.",
+    "Es un mensaje de humillación,",
+    "empaquetado en bolsas selladas.",
+    
+    "¡Vuestro valor humano expiró antes que esas latas!",
+    
+    "No pedimos caridad.",
+    "Pedimos dignidad.",
+    
+    "Gaza no necesita su comida podrida...",
+    "Necesita que dejen de enterrarla viva.",
+    
+    "Dejen de vender su hipocresía",
+    "en cajas con logos de caridad.",
+    
+    "Dejen de usar nuestro sufrimiento",
+    "para pulir su imagen internacional.",
+    
+    "Escríbanlo en los libros de historia:",
+    "En 2025, España no ayudó a un pueblo asediado —",
+    "le envió basura.",
+    
+    "Y en 2025, los palestinos no murieron de hambre...",
+    "sino de la traición del mundo."
+  ]
+},{
+  "title": "مساعدات إسبانية: عارٌ يسقط على غزة",
+  "content": [
+    "",
+  
+    "في زمن المجازر،",
+    "حين يصبح الخبز أغلى من الحياة،",
+    "سقطت \"المساعدات\" الإسبانية من السماء على غزة...",
+    
+    "لكنها لم تحمل الحياة،",
+    "بل حملت العفن،",
+    "والإهانة،",
+    "وانهيار القيم.",
+    
+    "نعم، كانت المساعدات الإسبانية منتهية الصلاحية.",
+    "فاسدة.",
+    "فاسدة.",
+    
+    "كيف لبلدٍ يدّعي التحضّر،",
+    "أن يرسل طعامًا لا يُعطى حتى للكلاب؟",
+    
+    "أي عقلٍ مريض يظن أن أجساد أطفال غزة،",
+    "صالحةٌ للتجارب البكتيرية والسموم؟",
+    
+    "هل تظنون أن دماءنا أرخص،",
+    "من تواريخ صلاحيّتكم؟",
+    
+    "هذا ليس خطأ.",
+    "بل جريمة أخلاقية.",
+    
+    "هذه ليست مساعدات.",
+    "بل رسالة إهانة،",
+    "مرسلة داخل أكياسٍ محكمة الإغلاق.",
+    
+    "قِيَمُكم الإنسانية انتهت صلاحيتُها قبل المعلبات!",
+    
+    "نحن لا نطلب صدقة.",
+    "نحن نطلب كرامة.",
+    
+    "غزة لا تحتاج إلى طعامكم الفاسد...",
+    "تحتاج أن تتوقفوا عن دفنها حيّة.",
+    
+    "توقفوا عن بيع نفاقكم،",
+    "داخل صناديق عليها شعارات الخير.",
+    
+    "توقفوا عن استخدام معاناتنا،",
+    "لتلميع صورتكم الزائفة.",
+    
+    "اكتبوا هذا في كتب التاريخ:",
+    "في عام 2025، لم تُساعد إسبانيا شعبًا محاصرًا،",
+    "بل أرسلت له القمامة.",
+    
+    "وفي عام 2025، لم يمُت الفلسطينيون جوعًا،",
+    "بل ماتوا من خيانة العالم."
+  ]
+},
 
+
+  {
+  "title": "  ...إخوتنا في إسبانية    ",
+  "content": [
+    "",
+   
+  
+    "يا شعبَ الحرية،",
+    
+    "يا من خرجتم إلى الساحات،",
+    "ورفعتم علم فلسطين فوق جدران مدنكم،",
+    "وغنيتم من أجل العدالة،",
+    "حين صمت العالم،",
+    
+    "نرسل إليكم هذه الكلمات،",
+    "من قلب الألم،",
+    "ومن تحت ركام الحصار،",
+    "ومن أرضٍ لم تعرف سوى الجوع والكرامة.",
+    
+    "وصلتنا مساعدات من بلادكم... بلا حياة.",
+    "بل فاسدة، ذات رائحة مهينة، وتواريخ منتهية!",
+    
+    "هل يُعقَل أن يُرمى إلى شعبٍ يُذبح كل يوم،",
+    "بفتاتٍ متعفن؟",
+    
+    "هل تقبل ضمائركم،",
+    "أن يُستغل وجع غزة،",
+    "لتفريغ مخازن منسيّة؟",
+    
+    "نعلم أن هذه ليست إرادتكم،",
+    "بل إرادة نظام لا يمثّل الإنسان في داخلكم.",
+    
+    "لكننا نناشدكم — كما نعلم أنكم أحرار،",
+    "شرفاء،",
+    "ولا تخافون أن تُتَّهَموا بالحق —:",
+    
+    "احتجوا.",
+    "طالبوا بتحقيقٍ عاجل.",
+    "واسألوا:",
+    "من تجرّأ على تمرير العفن باسم التضامن؟",
+    
+    "قولوا للعالم إن الشعب الإسباني،",
+    "لن يقبل أن تهين دولته شعبًا محاصرًا،",
+    "يقاتل من أجل البقاء.",
+    
+    "أنتم صوتُنا في شوارعكم،",
+    "أنتم مرآتنا في الغرب.",
+    
+    "صمتكم الآن جريمة،",
+    "لكن صوتكم قد يكون طوقَ نجاةٍ لكرامةٍ إنسانيةٍ تتهاوى.",
+    
+    "من غزة إليكم،",
+    "من شعبٍ جريح لا ينكسر،",
+    "من أمٍ دفنت ابنها بيد،",
+    "وحملت بيدها الأخرى قطعةَ خبز...",
+    
+    "نقول: نثق بكم.",
+    "لا تخذلونا."
+  ]
+},
+  {
+  "title": "  hermanos de España..",
+  "content": [
+    "",
+   
+    "Oh, pueblo libre,",
+    
+    "Oh, vosotros que nos acompañasteis en las plazas,",
+    "izasteis la bandera palestina sobre los muros de vuestras ciudades,",
+    "y cantasteis por la justicia cuando el mundo callaba...",
+    
+    "Os enviamos estas palabras desde el corazón del dolor,",
+    "desde bajo los escombros del asedio,",
+    "y desde una tierra que no ha conocido más que hambre y dignidad.",
+    
+    "Hemos recibido ayuda de vuestro país... sin vida.",
+    "¡Más bien, podrida, con olores humillantes y fechas caducadas!",
+    
+    "¿Es concebible que a un pueblo masacrado a diario,",
+    "se le arrojen migajas podridas?",
+    
+    "¿Acepta vuestra conciencia,",
+    "que el sufrimiento de Gaza se utilice",
+    "para vaciar las reservas olvidadas?",
+    
+    "Sabemos que esta no es vuestra voluntad,",
+    "sino la voluntad de un régimen",
+    "que no representa a los seres humanos que lleváis dentro.",
+    
+    "Pero les hacemos un llamamiento —",
+    "como sabemos que son libres, honestos,",
+    "y que no temen ser culpados por la justicia—:",
+    
+    "Protesten.",
+    "Exijan una investigación urgente.",
+    "Pregunten:",
+    "¿Quién se atrevió a propagar la podredumbre en nombre de la solidaridad?",
+    
+    "Díganle al mundo que el pueblo español",
+    "no aceptará que su Estado humille",
+    "a un pueblo asediado que lucha por sobrevivir.",
+    
+    "Ustedes son nuestra voz en sus calles.",
+    "Son nuestro espejo en Occidente.",
+    
+    "Su silencio ahora es un crimen,",
+    "pero su voz será un salvavidas",
+    "para una dignidad humana que se desmorona.",
+    
+    "De Gaza a ustedes,",
+    "de un pueblo herido que no se doblegará,",
+    "de una madre que enterró a su hijo con una mano...",
+    "y sostuvo un pedazo de pan con la otra...",
+    
+    "Decimos: Confiamos en ustedes.",
+    "No nos defrauden."
+  ]
+}
+
+      
 
 
 
@@ -665,13 +933,457 @@
     "nombre": "Karim Al Masri",
     "fragmento": "El palestino no dejó de soñar con Al-Quds… solo que el hambre y el asedio cambiaron el rumbo del alma.",
     "titulo": "Karim",
-    "image": "",
+    "image": "/imagenes/Karim_Al_Masri.jpg",
+    
     "description": "Karim ofrece una meditación poderosa y dolorosa sobre cómo el asedio prolongado transforma no solo los cuerpos, sino también las esperanzas. En este ensayo, Gaza es el espejo de un pueblo que sobrevive mientras se aferra a una patria cada vez más simbólica.",
+    "social": {
+    "facebook": "https://www.facebook.com/share/19rd63amJ3/",
+   
+    "instagram":"https://www.instagram.com/kareem_almasri1?igsh=MTFxMHAzNnR6bmdpMA==",
+    "donation": "https://gofund.me/0963a2d1"
+  },
+  
     "parts": [
       {
+  "Title": "كلماتٌ ترتجف خوفًا أمام الحدث",
+  "Content": [
+    "",
+ 
+    "أعلم أنني لن أجرؤ على كتابة ثلاثة أرباع ما أودُّ قوله حقًا،",
+    "وسأخفي الربع الأخير خلف كلماتٍ منمّقة،",
+    "كما يختبئ الجندي العائد من الحرب،",
+    "خلف زيٍّ أنيقٍ ورخيصٍ في آنٍ واحد.",
+    
+    "أتقدّم بخطى ثابتة،",
+    "وأتحمّل ألمَ قدمي العرجاء،",
+    "كي لا ألفت الأنظار.",
+    
+    "أكتب،",
+    "رغم أن من سبقوني لم يتركوا لي كلمات.",
+    "ومع ذلك، أكتب.",
+    
+    "حتى وإن لم يقرأ أحدٌ ما أكتب،",
+    "حتى وإن اضطررتُ لتمزيقه للمرة المئة.",
+    
+    "أكتب لأنني أحب الكتابة،",
+    "ولأن ترتيب الحروف جنبًا إلى جنب،",
+    "يمنحني شعورًا غريبًا بالطمأنينة.",
+    
+    "حتى وإن بدا بلا جدوى،",
+    "أو مضيعةً للوقت كما يظنّ البعض،",
+    
+    "فهو يُسعدني.",
+    "وهذا يكفيني."
+  ]
+}
+,
+{
+  "Title": "Palabras temblorosas de miedo ante el acontecimiento",
+  "Content": [
+    "",
+  
+    "Sé que no me atreveré a escribir ni tres cuartas partes de lo que realmente quiero decir.",
+    "Y esconderé la última cuarta parte bajo palabras floridas,",
+    "como un soldado que regresa de la guerra,",
+    "escondido tras un uniforme barato pero pulido.",
+    
+    "Avanzo con paso firme,",
+    "soportando el dolor de mi pie cojo,",
+    "para no llamar la atención.",
+    
+    "Escribo,",
+    "sabiendo que quienes me precedieron no me dejaron palabras.",
+    "Y aun así, escribo.",
+    
+    "Aunque nadie lea lo que digo.",
+    "Aunque tenga que romper lo que escribo por centésima vez.",
+    
+    "Escribo porque amo escribir.",
+    "Porque alinear letras, una junto a otra,",
+    "me da una calma extraña.",
+    
+    "Aunque parezca inútil,",
+    "aunque digan que es una pérdida de tiempo,",
+    
+    "me hace feliz.",
+    "Y eso, para mí, ya es suficiente."
+  ]
+}
+,
+{
+  "title": "الوطن لأهله",
+  "content": [
+    "",
+  
+    "لقد تغيّرت حياتُنا،",
+    "منذ أن بدأت حربُ الإبادة ضد شعبنا.",
+    
+    "تغيّرت الإنسانية،",
+    "وأصبحت الحياةُ غريبة.",
+    
+    "يشعر الإنسانُ أنه يعيش في زمنٍ لم يحلم به،",
+    "ولم يتخيّله،",
+    "ولم يخطر بباله قط.",
+    
+    "تُهدر الحياة،",
+    "تمرُّ السنوات،",
+    "وتنتهي الأعمار.",
+    
+    "كنا نؤمن إيمانًا راسخًا،",
+    "بأننا خيرُ أمةٍ في الأرض،",
+    "نملك ما لا يملكه سوانا:",
+    "التمسّك بالدين،",
+    "حبّ الوطن،",
+    "التكافل،",
+    "المحبة،",
+    "الاحترام،",
+    "والتقدير.",
+    
+    "كنا نشعر بفخرٍ واعتزازٍ عظيمَين،",
+    "بعزّة وكرامة الشعب الفلسطيني،",
+    "الذي يتميّز بالصمود،",
+    "والجود،",
+    "والتضحية،",
+    "والإخلاص،",
+    "وحرصه على تحقيق أعلى درجات الأمن والحماية والسلم الأهلي والاجتماعي.",
+    
+    "ومع اندلاع الحرب،",
+    "بقي أغلبُ شعبنا موحّدًا،",
+    "متمسكًا بالعقد الاجتماعي،",
+    "ثابتًا في دينه وأخلاقه،",
+    "وقيمه وعاداته وتقاليده.",
+    
+    "روابط الأخوّة والوفاء،",
+    "ورغبة الخير للجميع،",
+    "وحماية ممتلكات الناس،",
+    "كانت تجمع بيننا.",
+    
+    "ثم ظهر من خارج الصف الوطني،",
+    "ومن خارج قيم ومبادئ شعبنا،",
+    "من بدأ بنشر الفساد في أرجاء الوطن،",
+    "مستغلًا غياب القانون،",
+    "للسرقة، والنهب، والتحريض على الفتنة والإرهاب،",
+    "والتحكّم في أرزاق الناس.",
+    
+    "حدث ذلك عبر الطمع واحتكار البضائع المسروقة أو المستوردة،",
+    "من قِبل بعض التجار وبعض الجمعيات الخيرية المزعومة،",
+    "التي كانت تبيعها في الأسواق بأسعار باهظة.",
+    
+    "فزاد ذلك من معاناة الناس،",
+    "وضاعف الضغط عليهم،",
+    "بالتوازي مع خطط الاحتلال.",
+    
+    "نشهد اليوم سلوكًا بشعًا،",
+    "صادمًا،",
+    "مقززًا.",
+    
+    "يهين كرامة الإنسان،",
+    "ويعتدي على إنسانيته.",
+    
+    "نخجل من إدانته علنًا،",
+    "احترامًا لشعبنا،",
+    "ولئلّا نعمم هذا السلوك على المجتمع الفلسطيني بأسره.",
+    
+    "إنها أفعالُ عصاباتٍ ولصوص،",
+    "يمارسون جرائمهم ضد مواطنين منهكين،",
+    "مظلومين،",
+    "لا قدرة لهم على الدفاع عن أنفسهم،",
+    "ولا عن إنسانيتهم،",
+    "في وجه هذه القلة الفاسدة الخارجة عن القانون.",
+    
+    "الوطن ليس لهؤلاء.",
+    "الوطن لأحراره،",
+    "لمن يشعرون فيه بالأمان والسلام،",
+    "لا لمن يقتلون ويروّعون ويسرقون ويعتدون.",
+    
+    "كلكم مسؤولون.",
+    "أوقفوا هؤلاء، مهما كلف الأمر.",
+    "لا تسمحوا لهم بتكوين عصاباتٍ إجراميةٍ وإرهابيةٍ منظمة.",
+    
+    "نحن نحب وطننا.",
+    "نشأنا على الأغاني الثورية،",
+    "وقصص الكتّاب الفلسطينيين،",
+    "وأخبار الثوار والأسرى،",
+    "والمدن والشوارع التي رأيناها في العالم الافتراضي.",
+    
+    "أحببنا فلسطين عن بُعد،",
+    "من دون أن نراها كاملة،",
+    "لأننا وُلدنا على أرضها،",
+    "ولأننا، كبشر، نحمل في داخلنا شعورًا فطريًا بالانتماء إلى الجذور.",
+    
+    "شعرنا بفلسطين،",
+    "وفهمتُ تمامًا ما قصده غسان حين قال:",
+    "«...وأشعر تجاههم بما أشعر به تجاه فلسطين».",
+    
+    "وفي النهاية:",
+    "كنّا فلسطينيين بما يكفي،",
+    "لنرفض الجميع،",
+    "في غزة المتصدعة.",
+    
+    ". نحن وحدنا"
+  ]
+},
+{
+  "title": "La patria pertenece a su gente",
+  "content": [
+    "",
+ 
+    "Nuestras vidas cambiaron,",
+    "desde que comenzó la guerra de exterminio contra nuestro pueblo.",
+    
+    "La humanidad cambió.",
+    "La vida se volvió extraña.",
+    
+    "Uno siente que vive en una época ajena,",
+    "una que jamás soñó,",
+    "ni imaginó,",
+    "ni sospechó.",
+    
+    "La vida se desperdicia.",
+    "Los años pasan.",
+    "Y se nos acaba el tiempo.",
+    
+    "Estábamos convencidos,",
+    "de que éramos el mejor pueblo sobre la Tierra.",
+    
+    "Creíamos tener lo que nadie más tenía:",
+    "fe,",
+    "amor por la patria,",
+    "solidaridad,",
+    "apoyo mutuo,",
+    "afecto,",
+    "respeto,",
+    "y dignidad.",
+    
+    "Nos sentíamos profundamente orgullosos,",
+    "de la nobleza y entereza del pueblo palestino,",
+    "conocido por su firmeza,",
+    "su generosidad,",
+    "su sacrificio,",
+    "y su entrega.",
+    
+    "Un pueblo comprometido con la paz civil,",
+    "la seguridad,",
+    "y la protección de su gente.",
+    
+    "Incluso con la guerra,",
+    "la mayoría de nuestro pueblo permaneció unido.",
+    
+    "Fiel al contrato social,",
+    "firme en su religión,",
+    "y arraigado en sus valores, costumbres y tradiciones.",
+    
+    "Nos unían lazos de hermandad,",
+    "lealtad,",
+    "y la voluntad de hacer el bien.",
+    
+    "Pero entonces,",
+    "aparecieron grupos e individuos ajenos a nuestros principios,",
+    "que comenzaron a esparcir la corrupción.",
+    
+    "Aprovecharon la ausencia de ley",
+    "para saquear, robar,",
+    "sembrar el terror,",
+    "y controlar los medios de vida de la población.",
+    
+    "A través del egoísmo,",
+    "el monopolio de bienes robados o importados,",
+    "y la manipulación de precios",
+    "por parte de comerciantes y falsas organizaciones benéficas.",
+    
+    "Esto agravó el sufrimiento de nuestra gente,",
+    "y aumentó la presión sobre ella,",
+    "en sintonía con los planes del ocupante.",
+    
+    "Hoy vemos comportamientos atroces,",
+    "impactantes y vergonzosos,",
+    "que insultan la dignidad humana.",
+    
+    "Nos avergüenza nombrarlos,",
+    "por respeto a nuestro pueblo,",
+    "y para no manchar a todos por culpa de unos pocos.",
+    
+    "Son actos cometidos por ladrones y delincuentes,",
+    "contra ciudadanos agotados,",
+    "oprimidos,",
+    "que no tienen cómo defenderse,",
+    "ni proteger su humanidad,",
+    "frente a esta minoría corrupta y sin ley.",
+    
+    "La patria no es para ellos.",
+    
+    "La patria es para los libres,",
+    "para quienes se sienten seguros,",
+    "en paz,",
+    "y respetados.",
+    
+    "No para quienes matan,",
+    "aterrorizan,",
+    "roban,",
+    "y atacan a su propio pueblo.",
+    
+    "Todos ustedes son responsables.",
+    "Detengan a esa gente.",
+    "No permitan que formen bandas criminales y terroristas organizadas.",
+    
+    "Amamos nuestra patria.",
+    
+    "Crecimos con canciones revolucionarias,",
+    "escritores palestinos,",
+    "revolucionarios,",
+    "prisioneros,",
+    "ciudades y calles que solo vimos en pantallas.",
+    
+    "Amamos a Palestina a ciegas,",
+    "sin conocerla del todo,",
+    "porque nacimos sobre su tierra,",
+    "y porque el ser humano lleva un sentido natural de pertenencia a sus raíces.",
+    
+    "Sentimos a Palestina,",
+    "y entendí por completo lo que quiso decir Ghassan,",
+    "cuando escribió:",
+    "«...y siento por ellos lo mismo que siento por Palestina».",
+    
+    "Y al final:",
+    "Fuimos lo suficientemente palestinos,",
+    "como para rechazarlos a todos,",
+    "en Gaza la Resquebrajada.",
+    
+    "Estamos Solos."
+  ]
+}
+
+
+      ,{
+  "title": "الإرادة والتحدي",
+  "content": [
+    "",
+ 
+    "من غزة،",
+    "أكتبُ بصوتِ الذين لم يعودوا قادرين على الكلام.",
+    
+    "هنا، لا يكبر الأطفال.",
+    "إنهم يموتون جوعاً.",
+    "واحدًا تلو الآخر.",
+    
+    "يتحوّلون إلى أرقام في نشرات الأخبار،",
+    "كأن حياتهم لم تكن يومًا ذات قيمة.",
+    
+    "بعدهم تموت النساء،",
+    "ثم الشباب.",
+    
+    "تسقط الأمهات من شدة الإرهاق.",
+    "ومن بين الجائعين: الآباء،",
+    "والشيوخ.",
+    
+    "في المستشفيات،",
+    "يموت الأطباء جوعًا.",
+    "وحتى الصحفيون الذين ينقلون المأساة،",
+    "يموتون جوعًا كذلك.",
+    
+    "لا خبز.",
+    "لا طحين.",
+    "لا ماء.",
+    "لا دواء.",
+    "لا كهرباء.",
+    "لا وقود.",
+    "ولا حياة.",
+    
+    "من الخارج، لا نسمع إلا كلماتٍ ناعمة.",
+    "قلق دولي.",
+    "تصريحاتٌ جوفاء.",
+    "ونداءات خجولة لوقف إطلاق النار.",
+    
+    "لكن التحذيرات لا تُشبع طفلًا صار هيكلًا عظميًا،",
+    "ولا تداوي جراح أمٍّ فقدت أبناءها،",
+    "خدمةً لهذه الأرض.",
+    
+    "المجاعة هنا ليست خبرًا عاجلًا.",
+    "وجوع الأطفال لا يُعتبر أزمة إنسانية،",
+    "بل وصمةُ عارٍ على جبين الإنسانية.",
+    
+    "لقد خان العالم مبادئه،",
+    "حين سمح لأطفال غزة أن يتضوّروا جوعًا.",
+    
+    "ومع ذلك،",
+    "غزة تستحق الحياة.",
+    "غزة ستبقى حرة،",
+    "مهما تآمرت إسرائيل وحلفاؤها عليها.",
+    
+    "من قلب هذا الظلام،",
+    "نرفع صوتنا.",
+    
+    "فليسمع العالم."
+  ]
+}
+
+      ,{
+  "title": "Voluntad y Desafío",
+  "content": [
+    "",
+  
+    "Desde Gaza,",
+    "escribo con la voz de quienes ya no pueden hablar.",
+    
+    "Aquí, los niños no crecen.",
+    "Mueren de hambre.",
+    "Uno a uno.",
+    
+    "Se convierten en números en las noticias,",
+    "como si sus vidas nunca hubieran importado.",
+    
+    "Después, mueren las mujeres.",
+    "Luego, los jóvenes.",
+    
+    "Las madres se desploman, agotadas.",
+    "Y entre los hambrientos, están los padres.",
+    "También los ancianos.",
+    
+    "En los hospitales,",
+    "los médicos mueren de hambre.",
+    "Incluso los periodistas que intentan contar esta tragedia",
+    "comparten la misma suerte.",
+    
+    "No hay pan.",
+    "No hay harina.",
+    "No hay agua.",
+    "Ni medicinas.",
+    "Ni electricidad.",
+    "Ni combustible.",
+    "Ni vida.",
+    
+    "Desde afuera, solo palabras suaves.",
+    "Preocupación internacional.",
+    "Declaraciones vacías.",
+    "Llamados tímidos a un alto el fuego.",
+    
+    "Pero las advertencias no alimentan a un niño que ya es solo huesos.",
+    "No consuelan a una madre que ha perdido a sus hijos",
+    "sirviendo a esta tierra.",
+    
+    "Aquí, la hambruna no es noticia urgente.",
+    "El hambre de los niños no es una crisis humanitaria,",
+    "sino una vergüenza grabada en la frente del mundo.",
+    
+    "La humanidad falló,",
+    "cuando permitió que los niños de Gaza pasaran hambre.",
+    
+    "Aun así, Gaza merece vivir.",
+    "Gaza será libre,",
+    "aunque Israel y sus aliados conspiren en su contra.",
+    
+    "Desde esta oscuridad,",
+    "alzamos la voz.",
+    
+    "Que el mundo escuche."
+  ]
+}
+,{
   "title": "No somos cadáveres inspiradores",
   "content": 
     [
+      "",
+ 
       "En Gaza, nos negamos a ser solo el eco del derramamiento de sangre,",
       "ni un titular melancólico en el noticiero de la noche.",
       "",
@@ -711,6 +1423,8 @@
     ]},{
     "title": " لسنا مجرد جثث المُلهمة",
     "content":[
+      "",
+
       "نحن في غزة نرفض أن نكون مجرد صدى لسفك الدماء،",
       "ولا عنوانًا حزينًا في نشرة الأخبار المسائية.",
       "",
@@ -753,6 +1467,8 @@
 ,{
   "title": "Sueños transformados",
   "content": [
+    "",
+ 
     "El palestino en Gaza no carecía de una causa.",
     "Nacido en medio de la Nakba, creció entre mapas de su patria perdida.",
     "Su conciencia se nutría de imágenes de viejas llaves de casa y lemas de liberación y retorno.",
@@ -802,6 +1518,8 @@
        {
       "title": "Un hogar de tela ",
       "content": [
+        "",
+
     "Desde el siete de octubre, comenzó la historia de la injusticia, del genocidio y de la guerra.",
     "Afectó a los pequeños y a los grandes, a los fetos, a las mujeres, a los niños y a los ancianos. Nadie se salvó.",
     "",
@@ -850,6 +1568,8 @@
     {
   "title": "بيت من قماش",
   "content": [
+    "",
+ 
     "منذ السابع من أكتوبر، بدأت قصة الظلم والإبادة الجماعية والحرب.",
     "طالت الصغار والكبار، الأجنة، النساء، الأطفال، وكبار السن. لم يسلم أحد.",
     "",
@@ -892,6 +1612,8 @@
 {
   "title": "¿Hacia dónde vamos...?",
   "content": [
+    "",
+ 
     "¡Ay, qué dolor! La situación de la gente se ha vuelto extremadamente difícil...",
     "",
     "Intensos bombardeos en la Franja de Gaza...",
@@ -936,6 +1658,8 @@
   "title":"إلى آين نتّجه",
 
   "content": [
+    "",
+  
     "يا للأسى! أصبحت حالة الناس صعبة للغاية...",
     "",
     "قصف مكثف في قطاع غزة...",
@@ -981,6 +1705,8 @@
 {
   "title": "Gaza... ¡Bajo los escombros y la muerte!",
   "content": [
+    "",
+ 
     "Gaza está siendo exterminada, masacrada y desmembrada sin piedad.",
     "El mundo observa en silencio, como si la sangre palestina no valiera nada.",
     "",
@@ -1021,6 +1747,8 @@
 {
   "title": "غزة... تحت الأنقاض والموت!",
   "content": [
+    "",
+ 
     "تُباد غزة، وتُقتل وتُقطع بلا رحمة.",
     "بينما يشاهد العالم بصمت، وكأن الدم الفلسطيني لا قيمة له.",
     "",
@@ -1070,8 +1798,13 @@
   "nombre": "Abdul Razzaq Al-Majdalawi",
   "fragmento": "Estoy aquí llevando un mensaje de parte de mi primo Diyaa para el Mensajero de Allah ﷺ, y nada más. Menos de una hora antes de su martirio, estaba recitando: ﴿يَوْمَ يَعَضُّ الظَّالِمُ عَلَى يَدَيْهِ﴾. Un testimonio vivo desde Gaza en el momento de su entierro.",
   "titulo": "Abdul Razzaq Al-Majdalawi",
-  "image": "",
+  "image": "/imagenes/Abdul_Razzaq_Al-Majdalawi.jpg",
+  
   "description": "Imam y pensador de Gaza, no predica, sino que entierra. Abdul Razzaq Al-Majdalawi escribe desde debajo de la tierra, donde entierra a su primo mártir Diyaa, y desde allí transmite un mensaje a una Ummah que ha fallado.",
+  "social":{
+    "tiktok":"https://www.tiktok.com/@abdul.razzaq.majd?_t=ZN-8ya77E01ov8&_r=1",
+    "whatsapp":"https://wsend.co/972599612097"
+  },
   "parts": [
     {
       "title": "Oh Diyaa… cuentale al Mensajero de Allah",
@@ -1134,6 +1867,10 @@
       "title":   "يا ضياء... أخبر رسول الله.",
 
       "content": [
+         "",
+    "",
+    "",
+    "",
   "إنني هنا أحمل رسالة من ابن عمي ضياء إلى رسول الله ﷺ ولا شيء غيرها.",
   "",
   "وقبل أن أبلغها، دعوني أخبركم من هو ضياء.",

@@ -5,8 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Waterfall&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poiret+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-/* ✅ Base font-size para responsividad */
-html {
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poiret+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Corinthia:wght@400;700&family=Cormorant+Upright:wght@300;400;500;600;700&family=Ephesis&display=swap');html {
   font-size: 16px; /* Base para rem */
 }
 
@@ -26,13 +26,21 @@ body {
   min-height: 100%;
   justify-content: space-between;
 }
+.portada{
+         flex-grow: 1;
+          display: "flex";
+          flex-direction: column;
+          justify-content: "center";
+          align-items: "center";
+         
+}
 
 .titulo {
-  font-size: clamp(2.5rem, 8vw, 2rem); /* ✅ Responsive font size */
+  /* font-size: clamp(1.5rem, 8vw, 2rem); ✅ Responsive font size */
   margin: 2rem 0 1rem;
   letter-spacing: 0.1rem;
   font-weight: 500;
-   font-family: "Cinzel", serif;
+   font-family: 'Bonheur Royale';
 }
 
 .rojo {
@@ -62,14 +70,14 @@ body {
 }
 
 .autor {
-  font-size: clamp(2rem, 3vw, 1.2rem); /* ✅ Responsive font size */
+  font-size: clamp(2rem, 3vw, 1.1rem); /* ✅ Responsive font size */
   margin: 2rem 0 1rem;
   
 }
 
 .nombre {
   font-family: "Waterfall", cursive;
-  font-size: clamp(1.2rem, 4vw, 1.5rem); /* ✅ Responsive font size */
+  font-size: clamp(1.2rem, 4vw, 1.2rem); /* ✅ Responsive font size */
 }
 
 .navegacion-relato {
@@ -90,13 +98,16 @@ body {
   align-items: center;
   cursor: pointer;
   gap: 0.5rem;
-  font-size: clamp(0.9rem, 2.5vw, 1.1rem); /* ✅ Responsive font size */
-  font-weight: bold;
-  font-family: "Cinzel", serif;
+  font-size: clamp(0.9rem, 2.5vw, 1rem); /* ✅ Responsive font size */
+ 
+    font-family: "Corinthia", cursive;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .boton-siguiente .texto-sig {
   color: #B91C1C;
+  padding: 10px;
 }
 
 .boton-anterior .texto-ant {
@@ -181,7 +192,7 @@ body {
   height: 100vh;
 }
 .titulo{
-  font-size: 2.1rem;
+  font-size: 3.5rem;
 }
 p {
   font-size: 1.2rem; /* Nuevo tamaño de fuente para todos los párrafos */
@@ -193,4 +204,10 @@ li {
   line-height: 1.6; /* Asegurar buena legibilidad */
   margin-bottom: 1rem; /* Ajustar margen inferior si es necesario */
 }
+}
+
+@media (max-width: 480px) {
+  .portada{
+    margin-top: 95px;
+  }
 }
