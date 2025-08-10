@@ -37,11 +37,89 @@ export default function Libro() {
   }, [])
 
   const paginatedAutores = useMemo(() => {
+    // Límites iguales que el resto del libro
+    const FIRST_PAGE_MAX = 10
+    const OTHER_PAGES_MAX = 12
+
     return autores.map((autor) => {
-      const paginatedContent = splitRelatoWithPartsIntoPages(autor.parts || [], 12, 10)
+      const allPages = []
+      ;(autor.parts || []).forEach((part) => {
+        if (part.especial && Array.isArray(part.pages)) {
+          // Aplana arrays anidados (soluciona cuando pegas un array de objetos junto)
+          const specialPages = (Array.isArray(part.pages) ? part.pages : [part.pages]).flatMap((p) =>
+            Array.isArray(p) ? p : [p],
+          )
+
+          specialPages.forEach((page, i) => {
+            // 📌 Caso especial: videoTexto con paginación por bloques
+            if (page.tipo === "videoTexto") {
+              const textoArr = Array.isArray(page.texto) ? page.texto : [page.texto].filter(Boolean)
+              const firstPageWithVideoMax = Math.max(1, Math.floor(FIRST_PAGE_MAX * 0.6))
+              const firstChunk = textoArr.slice(0, firstPageWithVideoMax)
+
+              if (firstChunk.length) {
+                allPages.push({
+                  content: [{ tipo: "videoTexto", video: page.video, texto: firstChunk }],
+                  sectionTitle: i === 0 ? part.title : null,
+                  isFirstPageOfSection: i === 0,
+                  isEspecial: true,
+                })
+              }
+
+              let offset = firstChunk.length
+              while (offset < textoArr.length) {
+                const chunk = textoArr.slice(offset, offset + OTHER_PAGES_MAX)
+                allPages.push({
+                  content: [{ tipo: "texto", content: chunk }],
+                  sectionTitle: null,
+                  isFirstPageOfSection: false,
+                  isEspecial: true,
+                })
+                offset += OTHER_PAGES_MAX
+              }
+            } else if (page.tipo === "dobleTexto") {
+              const arabeArr = Array.isArray(page.arabe) ? page.arabe : [page.arabe].filter(Boolean)
+              const espArr = Array.isArray(page.espanol) ? page.espanol : [page.espanol].filter(Boolean)
+              const maxLen = Math.max(arabeArr.length, espArr.length)
+              const pairs = []
+              for (let idx = 0; idx < maxLen; idx++) {
+                pairs.push({ arabe: arabeArr[idx] || "", espanol: espArr[idx] || "" })
+              }
+              let offset = 0
+              let isFirstOfThisSpecial = true
+              while (offset < pairs.length) {
+                const limit = isFirstOfThisSpecial && i === 0 ? FIRST_PAGE_MAX : OTHER_PAGES_MAX
+                const chunk = pairs.slice(offset, offset + limit)
+                allPages.push({
+                  content: [
+                    { tipo: "dobleTexto", arabe: chunk.map((p) => p.arabe), espanol: chunk.map((p) => p.espanol) },
+                  ],
+                  sectionTitle: i === 0 && isFirstOfThisSpecial ? part.title : null,
+                  isFirstPageOfSection: i === 0 && isFirstOfThisSpecial,
+                  isEspecial: true,
+                })
+                offset += limit
+                isFirstOfThisSpecial = false
+              }
+            } else {
+              // Otros tipos especiales tal cual
+              allPages.push({
+                content: [page],
+                sectionTitle: i === 0 ? part.title : null,
+                isFirstPageOfSection: i === 0,
+                isEspecial: true,
+              })
+            }
+          })
+        } else {
+          const paginated = splitRelatoWithPartsIntoPages([part], OTHER_PAGES_MAX, FIRST_PAGE_MAX)
+          allPages.push(...paginated)
+        }
+      })
+
       return {
         ...autor,
-        paginatedContent: paginatedContent,
+        paginatedContent: allPages,
       }
     })
   }, [autores])
@@ -166,7 +244,7 @@ export default function Libro() {
                 <Portada
                   avanzarPagina={avanzarPagina}
                   onGoToHome={volverAlInicio}
-                  openContactModal={openContactModal} 
+                  openContactModal={openContactModal}
                 />
               </Pagina>
             )

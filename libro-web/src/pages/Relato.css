@@ -387,7 +387,7 @@
 
   .texto-ant,
   .texto-sig {
-    font-size: 1.1rem;
+    font-size: 2.1rem;
   }
 }
 
@@ -479,4 +479,131 @@
   }
   .parrafo-relato.texto-arabe {
   font-size: 1.3rem;}
+}
+/* 📌 VIDEO + TEXTO */
+.especial-video-texto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.especial-video-texto .video-col {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+}
+
+.especial-video-texto .texto-col {
+  flex: 1;
+}
+
+/* 📌 ESTILO GENERAL PARA VIDEO E IMAGEN */
+
+
+
+.especial-media-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* cubre todo el div, puede recortar */
+  border-radius: 8px;
+  display: block;
+}
+
+/* 📌 SOLO IMAGEN FINAL */
+.especial-imagen {
+  width: 90%;
+  height: 60vh;
+  margin: auto;
+
+}
+
+/* 📱 EN MÓVIL SE APILAN */
+@media (max-width: 768px) {
+  .especial-video-texto {
+    flex-direction: column;
+  }
+
+  .especial-media-box {
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+  }
+}
+.especial-doble-texto {
+  display: flex;
+  gap: 50px;
+  flex-direction: row-reverse;
+}
+
+.especial-doble-texto .col-arabe {
+  flex: 1;
+  direction: rtl;
+  text-align: right;
+}
+
+.especial-doble-texto .col-espanol {
+  flex: 1;
+  direction: ltr;
+  text-align: left;
+}
+
+/* En móviles se apilan */
+@media (max-width: 768px) {
+  .especial-video-texto,
+  .especial-doble-texto {
+    flex-direction: column;
+  }
+}.especial-media-box {
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 10px; */
+  border-radius: 12px;
+  box-shadow: 0 -1px 5px rgba(0, 128, 0, 0.4);
+}
+
+.especial-media-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: unset;
+  border-radius: 8px;
+  display: block;
+  margin: 0px;
+  max-width: 100%;
+}
+.cuadro-imagen-final {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(80vw, 80vh); /* tamaño grande pero sin salir del viewport */
+  height: min(80vw, 95vh);
+  border: 2px solid #018a21; /* verde */
+  border-radius: 20px;
+  overflow: hidden; /* para que la imagen respete el borde redondeado */
+  z-index: 2; /* por encima del contenido normal */
+  pointer-events: none; /* no bloquea clics en botones */
+}
+
+.cuadro-imagen-final img {
+  width: 100%;
+  height: 100%;
+   object-fit: fill;/* para que quepa entera sin recortar */
+}
+@media (max-width: 480px){
+  .cuadro-imagen-final{
+     position: relative;
+     top: 0%;
+     
+  left: 0%;
+  transform: translate(0%, 0%);
+   height: min(150vw, 100vh);
+   width: min(94vw, 115vh); 
+  }
+  
 }
